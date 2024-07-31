@@ -1,0 +1,63 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.4.3 Jul 31 2024 / 19:54:59 (738127e7e) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name TMOTORF7V2
+manufacturer_id TMTR
+mcu_id 001100174232500e20343639
+signature 
+
+# feature
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+
+# aux
+aux 0 41 0 1300 1700 0 0
+
+# master
+set osd_vbat_pos = 2633
+set osd_crosshairs_pos = 2360
+set osd_ah_sbar_pos = 2361
+set osd_ah_pos = 2233
+set osd_compass_bar_pos = 2069
+set osd_warnings_pos = 14932
+set vcd_video_system = HD
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
